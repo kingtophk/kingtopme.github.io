@@ -3,154 +3,360 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>津拓實業 | 精密金屬加工與製造</title>
+
+  <title>津拓實業 JINTUO INDUSTRY | CNC 精密金屬加工與製造</title>
+
+  <meta name="description" content="津拓實業為香港工貿一體企業，蘇州生產基地專注 CNC 精密加工、車削、銑削、走心機加工及精密金屬零部件製造，服務全球工業客戶。" />
+
+  <meta name="keywords" content="CNC加工, 精密加工, 金屬加工, 車削加工, 走心機加工, CNC machining, Precision Manufacturing" />
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     html {
       scroll-behavior: smooth;
     }
+
     body {
-      background: #0f172a;
+      background: #020617;
       color: #e2e8f0;
       font-family: Arial, Helvetica, sans-serif;
     }
+
     .hero-bg {
-      background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.9)),
-      url('https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1600&auto=format&fit=crop');
+      background:
+      linear-gradient(rgba(2,6,23,0.82), rgba(2,6,23,0.9)),
+      url('https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1800&auto=format&fit=crop');
       background-size: cover;
       background-position: center;
     }
+
+    .glass {
+      background: rgba(15,23,42,0.75);
+      backdrop-filter: blur(10px);
+    }
+
     .section-title {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 1rem;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg,#ffffff,#94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .lang-en {
+      display: none;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      transition: 0.3s ease;
     }
   </style>
 </head>
 <body>
 
-  <header class="fixed top-0 w-full bg-slate-950/90 backdrop-blur z-50 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div>
-        <h1 class="text-2xl font-bold tracking-wide">津拓實業</h1>
-        <p class="text-sm text-slate-400">JINTUO INDUSTRY</p>
+<!-- WhatsApp Button -->
+<a href="https://wa.me/85200000000"
+   target="_blank"
+   class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-400 text-white px-5 py-4 rounded-full shadow-2xl font-bold">
+  WhatsApp
+</a>
+
+<!-- Header -->
+<header class="fixed top-0 w-full glass border-b border-slate-800 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <div>
+      <h1 class="text-2xl font-bold tracking-widest">津拓實業</h1>
+      <p class="text-slate-400 text-sm">JINTUO INDUSTRY</p>
+    </div>
+
+    <nav class="hidden md:flex gap-8 text-sm text-slate-300 items-center">
+      <a href="#about" class="hover:text-white">關於我們</a>
+      <a href="#services" class="hover:text-white">加工能力</a>
+      <a href="#equipment" class="hover:text-white">設備展示</a>
+      <a href="#products" class="hover:text-white">產品中心</a>
+      <a href="#contact" class="hover:text-white">聯絡我們</a>
+
+      <button onclick="toggleLanguage()"
+              class="border border-slate-500 px-4 py-2 rounded-lg hover:bg-white hover:text-black transition">
+        中文 / EN
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero-bg min-h-screen flex items-center">
+  <div class="max-w-7xl mx-auto px-6 w-full pt-24">
+
+    <div class="max-w-4xl">
+
+      <p class="uppercase tracking-[0.4em] text-slate-300 mb-6">
+        Precision Manufacturing · Global Delivery
+      </p>
+
+      <h2 class="lang-zh text-6xl md:text-8xl font-black leading-tight mb-8 gradient-text">
+        精密製造<br>
+        全球交付
+      </h2>
+
+      <h2 class="lang-en text-6xl md:text-8xl font-black leading-tight mb-8 gradient-text">
+        Precision Manufacturing<br>
+        Global Delivery
+      </h2>
+
+      <p class="lang-zh text-xl text-slate-300 leading-9 mb-10 max-w-3xl">
+        津拓實業立足香港，生產基地位於中國蘇州，專注於 CNC 精密加工、車削、銑削、走心機加工及精密金屬零部件製造，為全球工業客戶提供穩定、高效、可靠的製造解決方案。
+      </p>
+
+      <p class="lang-en text-xl text-slate-300 leading-9 mb-10 max-w-3xl">
+        JINTUO INDUSTRY is a Hong Kong based industrial and trading company with a manufacturing base in Suzhou, China, specializing in CNC machining, turning, milling, Swiss machining and precision metal component manufacturing.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="bg-white text-black px-8 py-4 rounded-2xl font-bold hover:bg-slate-200 transition">
+          聯絡我們
+        </a>
+
+        <a href="#products" class="border border-slate-500 px-8 py-4 rounded-2xl hover:bg-white hover:text-black transition">
+          查看產品
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-28 bg-slate-950">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+
+    <div>
+      <h3 class="section-title">關於我們</h3>
+
+      <p class="text-slate-300 text-lg leading-9 mb-6">
+        津拓實業是一家位於香港的工貿一體化企業，依托蘇州成熟的精密製造產業鏈，長期服務於全球工業、機械、自動化及設備領域客戶。
+      </p>
+
+      <p class="text-slate-300 text-lg leading-9 mb-6">
+        我們提供 CNC 加工、精密車削、銑削、走心機加工、表面處理及非標零件訂製服務，具備穩定品質與快速交付能力。
+      </p>
+
+      <div class="grid grid-cols-2 gap-6 mt-10">
+        <div class="glass p-6 rounded-3xl">
+          <h4 class="text-4xl font-bold mb-2">10+</h4>
+          <p class="text-slate-400">Years Experience</p>
+        </div>
+
+        <div class="glass p-6 rounded-3xl">
+          <h4 class="text-4xl font-bold mb-2">Global</h4>
+          <p class="text-slate-400">Industrial Clients</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1400&auto=format&fit=crop"
+           class="rounded-[32px] shadow-2xl">
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-28 bg-slate-900">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-20">
+      <h3 class="section-title">加工能力</h3>
+      <p class="text-slate-400 text-lg">高精度 · 高穩定性 · 高效率</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div class="glass p-8 rounded-[28px] border border-slate-800">
+        <h4 class="text-2xl font-bold mb-4">CNC 加工</h4>
+        <p class="text-slate-400 leading-8">
+          高精度 CNC 金屬零件加工，支援鋁、不鏽鋼、黃銅、鈦合金等材料。
+        </p>
       </div>
 
-      <nav class="hidden md:flex gap-8 text-sm text-slate-300">
-        <a href="#about" class="hover:text-white">關於我們</a>
-        <a href="#services" class="hover:text-white">加工能力</a>
-        <a href="#products" class="hover:text-white">產品展示</a>
-        <a href="#advantages" class="hover:text-white">我們的優勢</a>
-        <a href="#contact" class="hover:text-white">聯絡我們</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero-bg min-h-screen flex items-center pt-24">
-    <div class="max-w-7xl mx-auto px-6 w-full">
-      <div class="max-w-3xl">
-        <p class="uppercase tracking-[0.4em] text-slate-300 mb-6">Precision Manufacturing · Global Delivery</p>
-
-        <h2 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
-          精密製造<br />
-          全球交付
-        </h2>
-
-        <p class="text-xl text-slate-300 leading-relaxed mb-10">
-          津拓實業立足香港，生產基地位於中國蘇州，專注於 CNC 精密加工、車削、銑削、走心機加工及高品質金屬零部件製造，為全球客戶提供穩定、高效、可靠的製造解決方案。
+      <div class="glass p-8 rounded-[28px] border border-slate-800">
+        <h4 class="text-2xl font-bold mb-4">精密車削</h4>
+        <p class="text-slate-400 leading-8">
+          適用於軸類、接頭、緊固件及精密工業零件批量製造。
         </p>
+      </div>
 
-        <div class="flex flex-wrap gap-4">
-          <a href="#contact" class="bg-white text-slate-900 px-8 py-4 rounded-xl font-semibold hover:bg-slate-200 transition">
-            聯絡我們
+      <div class="glass p-8 rounded-[28px] border border-slate-800">
+        <h4 class="text-2xl font-bold mb-4">走心機加工</h4>
+        <p class="text-slate-400 leading-8">
+          專注微小型高精密零件加工，具備穩定大批量生產能力。
+        </p>
+      </div>
+
+      <div class="glass p-8 rounded-[28px] border border-slate-800">
+        <h4 class="text-2xl font-bold mb-4">表面處理</h4>
+        <p class="text-slate-400 leading-8">
+          支援陽極氧化、噴砂、熱處理、電鍍等完整配套工藝。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Equipment -->
+<section id="equipment" class="py-28 bg-slate-950">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-20">
+      <h3 class="section-title">工廠設備展示</h3>
+      <p class="text-slate-400 text-lg">Advanced Manufacturing Equipment</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <img src="https://images.unsplash.com/photo-1565431182265-6dfc5c5f6f1f?q=80&w=1200&auto=format&fit=crop"
+           class="rounded-[28px] h-80 object-cover w-full">
+
+      <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop"
+           class="rounded-[28px] h-80 object-cover w-full">
+
+      <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
+           class="rounded-[28px] h-80 object-cover w-full">
+
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products" class="py-28 bg-slate-900">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-20">
+      <h3 class="section-title">產品中心</h3>
+      <p class="text-slate-400 text-lg">Precision Components Solutions</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div class="product-card glass rounded-[30px] overflow-hidden border border-slate-800">
+        <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=1200&auto=format&fit=crop"
+             class="h-72 w-full object-cover">
+
+        <div class="p-8">
+          <h4 class="text-2xl font-bold mb-4">CNC 精密零件</h4>
+          <p class="text-slate-400 leading-8 mb-6">
+            適用於工業設備、自動化及機械系統。
+          </p>
+
+          <a href="#contact" class="text-white font-bold border-b border-slate-500 pb-1">
+            查看詳情
           </a>
+        </div>
+      </div>
 
-          <a href="#services" class="border border-slate-400 px-8 py-4 rounded-xl hover:bg-white hover:text-slate-900 transition">
-            查看加工能力
+      <div class="product-card glass rounded-[30px] overflow-hidden border border-slate-800">
+        <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=1200&auto=format&fit=crop"
+             class="h-72 w-full object-cover">
+
+        <div class="p-8">
+          <h4 class="text-2xl font-bold mb-4">車削加工件</h4>
+          <p class="text-slate-400 leading-8 mb-6">
+            高穩定性批量製造與高精度控制。
+          </p>
+
+          <a href="#contact" class="text-white font-bold border-b border-slate-500 pb-1">
+            查看詳情
           </a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="about" class="py-24 bg-slate-900">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-      <div>
-        <h3 class="section-title">關於我們</h3>
+      <div class="product-card glass rounded-[30px] overflow-hidden border border-slate-800">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+             class="h-72 w-full object-cover">
 
-        <p class="text-slate-300 leading-8 text-lg mb-6">
-          津拓實業是一家位於香港的工貿一體化企業，依托中國蘇州成熟的製造產業鏈與精密加工能力，長期服務於全球工業客戶。
-        </p>
+        <div class="p-8">
+          <h4 class="text-2xl font-bold mb-4">非標訂製件</h4>
+          <p class="text-slate-400 leading-8 mb-6">
+            根據客戶圖紙與需求提供客製化開發方案。
+          </p>
 
-        <p class="text-slate-300 leading-8 text-lg mb-6">
-          公司專注於高精度金屬零部件製造，覆蓋 CNC 加工、精密車削、銑削、走心機加工、非標零件訂製等領域，可根據客戶圖紙及需求提供快速、高品質的加工服務。
-        </p>
-
-        <p class="text-slate-300 leading-8 text-lg">
-          我們堅持以品質為核心，以交付為保障，以長期合作為目標，致力於成為全球客戶值得信賴的製造合作夥伴。
-        </p>
-      </div>
-
-      <div>
-        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1400&auto=format&fit=crop"
-             class="rounded-3xl shadow-2xl" />
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="py-24 bg-slate-950">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h3 class="section-title">加工能力</h3>
-        <p class="text-slate-400 text-lg">高精度 · 高穩定性 · 高效率</p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 hover:border-slate-600 transition">
-          <h4 class="text-2xl font-bold mb-4">CNC 加工</h4>
-          <p class="text-slate-400 leading-7">高精度 CNC 零件加工，支援複雜結構與多種材料訂製。</p>
-        </div>
-
-        <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 hover:border-slate-600 transition">
-          <h4 class="text-2xl font-bold mb-4">車削加工</h4>
-          <p class="text-slate-400 leading-7">精密車床加工服務，適用於各類軸類、連接件及非標件。</p>
-        </div>
-
-        <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 hover:border-slate-600 transition">
-          <h4 class="text-2xl font-bold mb-4">走心機加工</h4>
-          <p class="text-slate-400 leading-7">適用於微小型高精密零件的大批量穩定加工。</p>
-        </div>
-
-        <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 hover:border-slate-600 transition">
-          <h4 class="text-2xl font-bold mb-4">表面處理</h4>
-          <p class="text-slate-400 leading-7">支援陽極氧化、電鍍、噴砂、熱處理等配套工藝。</p>
+          <a href="#contact" class="text-white font-bold border-b border-slate-500 pb-1">
+            查看詳情
+          </a>
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="products" class="py-24 bg-slate-900">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h3 class="section-title">產品展示</h3>
-        <p class="text-slate-400 text-lg">精密零部件製造解決方案</p>
-      </div>
-    </div>
-  </section>
+<!-- Inquiry -->
+<section id="contact" class="py-28 bg-slate-950">
+  <div class="max-w-5xl mx-auto px-6">
 
-  <section id="contact" class="py-24 bg-slate-900">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-4xl font-bold mb-8">聯絡我們</h3>
-
-      <p class="text-slate-300 text-xl leading-8 mb-12">
-        歡迎全球客戶與合作夥伴聯絡我們，獲取產品方案、加工報價與長期合作支援。
+    <div class="text-center mb-16">
+      <h3 class="section-title">聯絡我們</h3>
+      <p class="text-slate-400 text-lg">
+        歡迎全球客戶與合作夥伴聯絡我們獲取報價與合作方案。
       </p>
     </div>
-  </section>
 
-  <footer class="border-t border-slate-800 py-8 bg-slate-950 text-center text-slate-500">
-    © 2026 津拓實業 JINTUO INDUSTRY. All Rights Reserved.
-  </footer>
+    <div class="glass p-10 rounded-[36px] border border-slate-800">
+
+      <form class="grid md:grid-cols-2 gap-6">
+
+        <input type="text" placeholder="您的姓名"
+               class="bg-slate-900 border border-slate-700 rounded-2xl p-4 outline-none">
+
+        <input type="email" placeholder="Email"
+               class="bg-slate-900 border border-slate-700 rounded-2xl p-4 outline-none">
+
+        <input type="text" placeholder="公司名稱"
+               class="bg-slate-900 border border-slate-700 rounded-2xl p-4 outline-none">
+
+        <input type="text" placeholder="WhatsApp"
+               class="bg-slate-900 border border-slate-700 rounded-2xl p-4 outline-none">
+
+        <textarea placeholder="請輸入您的詢盤需求"
+                  rows="6"
+                  class="md:col-span-2 bg-slate-900 border border-slate-700 rounded-2xl p-4 outline-none"></textarea>
+
+        <button class="bg-white text-black font-bold py-4 rounded-2xl md:col-span-2 hover:bg-slate-200 transition">
+          提交詢盤
+        </button>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-slate-800 py-10 bg-black text-center text-slate-500">
+  <p class="mb-2">© 2026 津拓實業 JINTUO INDUSTRY</p>
+  <p>Precision Manufacturing · Global Delivery</p>
+</footer>
+
+<script>
+  function toggleLanguage() {
+    const zh = document.querySelectorAll('.lang-zh');
+    const en = document.querySelectorAll('.lang-en');
+
+    zh.forEach(el => {
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    });
+
+    en.forEach(el => {
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    });
+  }
+</script>
 
 </body>
 </html>
