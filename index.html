@@ -1,9 +1,7 @@
-能不能給我改好，直接發我HTML格式
 <!DOCTYPE html>
 <html lang="zh-HK">
 <head>
-
-<meta charset="UTF-8">
+<meta charset="UTF-10">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>津拓實業（香港）有限公司 | KingTop Industrial (Hong Kong) Limited</title>
@@ -13,7 +11,6 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
-
 html{
 scroll-behavior:smooth;
 }
@@ -32,7 +29,6 @@ align-items:center;
 background:
 linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.88)),
 url('https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1600&auto=format&fit=crop');
-
 background-size:cover;
 background-position:center;
 }
@@ -68,46 +64,21 @@ opacity:1;
 transform:translateY(0);
 }
 }
-
 </style>
 
 <script>
-
-let currentLang='zh';
-
 function toggleLanguage(){
-
 const zh=document.querySelectorAll('.lang-zh');
 const en=document.querySelectorAll('.lang-en');
 
-if(currentLang==='zh'){
-
 zh.forEach(el=>{
-el.style.display='none';
+el.style.display=el.style.display==='none'?'block':'none';
 });
 
 en.forEach(el=>{
-el.style.display='block';
+el.style.display=el.style.display==='block'?'none':'block';
 });
-
-currentLang='en';
-
-}else{
-
-zh.forEach(el=>{
-el.style.display='block';
-});
-
-en.forEach(el=>{
-el.style.display='none';
-});
-
-currentLang='zh';
-
 }
-
-}
-
 </script>
 
 </head>
@@ -120,7 +91,6 @@ WhatsApp
 </a>
 
 <header class="fixed top-0 w-full glass border-b border-slate-800 z-50">
-
 <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
 <div>
@@ -131,27 +101,10 @@ WhatsApp
 <div class="flex items-center gap-8">
 
 <nav class="hidden md:flex gap-8 text-sm">
-
-<a href="#about">
-<span class="lang-zh">關於我們</span>
-<span class="lang-en">About Us</span>
-</a>
-
-<a href="#services">
-<span class="lang-zh">加工能力</span>
-<span class="lang-en">Services</span>
-</a>
-
-<a href="#equipment">
-<span class="lang-zh">設備展示</span>
-<span class="lang-en">Equipment</span>
-</a>
-
-<a href="#contact">
-<span class="lang-zh">聯絡我們</span>
-<span class="lang-en">Contact</span>
-</a>
-
+<a href="#about"><span class="lang-zh">關於我們</span><span class="lang-en">About Us</span></a>
+<a href="#services"><span class="lang-zh">加工能力</span><span class="lang-en">Services</span></a>
+<a href="#equipment"><span class="lang-zh">設備展示</span><span class="lang-en">Equipment</span></a>
+<a href="#contact"><span class="lang-zh">聯絡我們</span><span class="lang-en">Contact</span></a>
 </nav>
 
 <button onclick="toggleLanguage()"
@@ -206,7 +159,7 @@ providing stable, reliable and high-quality solutions for global customers.
 About Us
 </h3>
 
-<p class="lang-zh text-slate-300 leading-10 text-lg">
+<p class="lang-zh text-slate-300 leading-10 text-4xl">
 津拓實業（香港）有限公司立足香港，
 生產基地位於中國長三角地區蘇州，
 我們可以為您做到：
@@ -226,29 +179,27 @@ Sample Making ｜ Stable Quality Control ｜ On-time Delivery<br>
 Professional Customs Clearance ｜ Long-term Warranty ｜ Safety Certification
 </p>
 
-<p class="lang-zh text-slate-400 leading-10 text-xl mt-6">
+<p class="lang-zh text-slate-400 leading-10 text-4xl mt-6">
 AI時代的精密製造伙伴。
 </p>
 
-<p class="lang-en text-slate-400 leading-10 text-xl mt-6">
+<p class="lang-en text-slate-400 leading-10 text-4xl mt-6">
 Precision Manufacturing Partner in the AI Era.
 </p>
 
 </div>
 
-<div>
+</div>
 
+<div>
 <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1400&auto=format&fit=crop"
 class="rounded-[32px] shadow-2xl">
-
 </div>
 
 </div>
-
 </section>
 
 <section id="services" class="py-28 bg-slate-900">
-
 <div class="max-w-7xl mx-auto px-6">
 
 <h3 class="lang-zh text-5xl font-bold text-center mb-20">
@@ -262,92 +213,113 @@ Services
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
 <div class="glass p-8 rounded-[28px] card">
-
-<h4 class="lang-zh text-2xl font-bold mb-4">
-CNC 加工中心
-</h4>
-
-<h4 class="lang-en text-2xl font-bold mb-4">
-CNC Machining Center
-</h4>
-
+<h4 class="lang-zh text-2xl font-bold mb-4">CNC 加工中心</h4>
+<h4 class="lang-en text-2xl font-bold mb-4">CNC Machining Center</h4>
 <p class="lang-zh text-slate-400 leading-8">
 TSUGAMI 高精度 CNC 加工中心。
 </p>
-
 <p class="lang-en text-slate-400 leading-8">
 High-precision TSUGAMI CNC machining centers.
 </p>
-
 </div>
 
 <div class="glass p-8 rounded-[28px] card">
-
-<h4 class="lang-zh text-2xl font-bold mb-4">
-精密車削
-</h4>
-
-<h4 class="lang-en text-2xl font-bold mb-4">
-Precision Turning
-</h4>
-
+<h4 class="lang-zh text-2xl font-bold mb-4">精密車削</h4>
+<h4 class="lang-en text-2xl font-bold mb-4">Precision Turning</h4>
 <p class="lang-zh text-slate-400 leading-8">
 高精度工業零件加工與批量生產。
 </p>
-
 <p class="lang-en text-slate-400 leading-8">
 High-precision industrial parts machining and mass production.
 </p>
-
 </div>
 
 <div class="glass p-8 rounded-[28px] card">
-
-<h4 class="lang-zh text-2xl font-bold mb-4">
-走心機加工
-</h4>
-
-<h4 class="lang-en text-2xl font-bold mb-4">
-Swiss-Type Machining
-</h4>
-
+<h4 class="lang-zh text-2xl font-bold mb-4">走心機加工</h4>
+<h4 class="lang-en text-2xl font-bold mb-4">Swiss-Type Machining</h4>
 <p class="lang-zh text-slate-400 leading-8">
 適用於高精密微型零件製造。
 </p>
-
 <p class="lang-en text-slate-400 leading-8">
 Ideal for high-precision miniature component manufacturing.
 </p>
-
 </div>
 
 <div class="glass p-8 rounded-[28px] card">
-
-<h4 class="lang-zh text-2xl font-bold mb-4">
-鈑金製作
-</h4>
-
-<h4 class="lang-en text-2xl font-bold mb-4">
-Sheet Metal Fabrication
-</h4>
-
+<h4 class="lang-zh text-2xl font-bold mb-4">鈑金製作</h4>
+<h4 class="lang-en text-2xl font-bold mb-4">Sheet Metal Fabrication</h4>
 <p class="lang-zh text-slate-400 leading-8">
 折彎、切割、焊接及鈑金加工。
 </p>
-
 <p class="lang-en text-slate-400 leading-8">
 Bending, cutting, welding and sheet metal processing.
 </p>
-
 </div>
 
 </div>
 </div>
+</section>
 
+<section id="equipment" class="py-28">
+<div class="max-w-7xl mx-auto px-6">
+
+<h3 class="lang-zh text-5xl font-bold text-center mb-20">
+設備展示
+</h3>
+
+<h3 class="lang-en text-5xl font-bold text-center mb-20">
+Equipment
+</h3>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1200&auto=format&fit=crop"
+class="rounded-[28px] h-72 object-cover w-full mb-4">
+<h4 class="lang-zh text-xl font-bold">CNC 加工中心</h4>
+<h4 class="lang-en text-xl font-bold">CNC Machining Center</h4>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop"
+class="rounded-[28px] h-72 object-cover w-full mb-4">
+<h4 class="lang-zh text-xl font-bold">數控機床</h4>
+<h4 class="lang-en text-xl font-bold">CNC Machine Tool</h4>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
+class="rounded-[28px] h-72 object-cover w-full mb-4">
+<h4 class="lang-zh text-xl font-bold">數控磨床</h4>
+<h4 class="lang-en text-xl font-bold">CNC Grinder</h4>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop"
+class="rounded-[28px] h-72 object-cover w-full mb-4">
+<h4 class="lang-zh text-xl font-bold">鑽床</h4>
+<h4 class="lang-en text-xl font-bold">Drilling Machine</h4>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop"
+class="rounded-[28px] h-72 object-cover w-full mb-4">
+<h4 class="lang-zh text-xl font-bold">攻牙設備</h4>
+<h4 class="lang-en text-xl font-bold">Tapping Equipment</h4>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+class="rounded-[28px] h-72 object-cover w-full mb-4">
+<h4 class="lang-zh text-xl font-bold">TESA 高度儀</h4>
+<h4 class="lang-en text-xl font-bold">TESA Height Gauge</h4>
+</div>
+
+</div>
+</div>
 </section>
 
 <section id="contact" class="py-28 bg-slate-900">
-
 <div class="max-w-5xl mx-auto px-6">
 
 <h3 class="lang-zh text-5xl font-bold text-center mb-16">
@@ -360,50 +332,55 @@ Contact
 
 <div class="glass p-10 rounded-[32px]">
 
+<div class="grid md:grid-cols-2 gap-8 mb-10">
+
+<div>
+<h4 class="text-xl font-bold mb-2">WhatsApp</h4>
+<p class="text-slate-400">+852 0000 0000</p>
+</div>
+
+<div>
+<h4 class="text-xl font-bold mb-2">Email</h4>
+<p class="text-slate-400">info@kingtop-industrial.com</p>
+</div>
+
+</div>
+
 <form class="grid md:grid-cols-2 gap-6">
 
 <input type="text"
-placeholder="您的姓名"
-class="lang-zh bg-slate-950 p-4 rounded-2xl border border-slate-700">
+placeholder="您的姓名" class="lang-zh bg-slate-950 p-4 rounded-2xl border border-slate-700">
 
 <input type="text"
 placeholder="Your Name"
-class="lang-en bg-slate-950 p-4 rounded-2xl border border-slate-700">
+class="bg-slate-950 p-4 rounded-2xl border border-slate-700">
 
 <input type="email"
 placeholder="Email"
 class="bg-slate-950 p-4 rounded-2xl border border-slate-700">
 
 <textarea rows="6"
-placeholder="詢盤需求"
-class="lang-zh md:col-span-2 bg-slate-950 p-4 rounded-2xl border border-slate-700"></textarea>
+placeholder="詢盤需求" class="lang-zh md:col-span-2 bg-slate-950 p-4 rounded-2xl border border-slate-700"></textarea>
 
 <textarea rows="6"
 placeholder="Inquiry Details"
-class="lang-en md:col-span-2 bg-slate-950 p-4 rounded-2xl border border-slate-700"></textarea>
+class="md:col-span-2 bg-slate-950 p-4 rounded-2xl border border-slate-700"></textarea>
 
 <button class="bg-white text-black font-bold py-4 rounded-2xl md:col-span-2 hover:bg-slate-200 transition">
-
-<span class="lang-zh">提交詢盤</span>
-<span class="lang-en">Send Inquiry</span>
-
+<span class="lang-zh">提交詢盤</span><span class="lang-en">Send Inquiry</span>
 </button>
 
 </form>
 
 </div>
 </div>
-
 </section>
 
 <footer class="py-10 text-center border-t border-slate-800">
-
 <p>© 2026 津拓實業（香港）有限公司</p>
-
 <p class="text-slate-500 mt-2">
 KingTop Industrial (Hong Kong) Limited
 </p>
-
 </footer>
 
 </body>
