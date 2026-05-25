@@ -5,39 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>津拓實業（香港）有限公司 | KingTop Industrial (Hong Kong) Limited</title>
 
-<meta name="description" content="津拓實業（香港）有限公司專注 CNC 加工中心、數控機床、鈑金製作及精密金屬加工。">
-<meta name="keywords" content="CNC加工, 數控機床, 金屬加工, 津上TSUGAMI, 精密製造">
-
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
-body{
-background:#020617;
-color:white;
-font-family:Arial;
-scroll-behavior:smooth;
-}
+body{background:#020617;color:white;font-family:Arial;}
 .hero{
 height:100vh;
 background:
 linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.85)),
 url('https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1600&auto=format&fit=crop');
 background-size:cover;
-background-position:center;
 display:flex;
 align-items:center;
 }
 .glass{
-background:rgba(15,23,42,.7);
-backdrop-filter:blur(12px);
+background:rgba(15,23,42,.72);
+backdrop-filter:blur(10px);
 }
 .card:hover{
 transform:translateY(-8px);
 transition:.3s;
 }
+.lang-en{display:none;}
 </style>
-</head>
 
+<script>
+function toggleLanguage(){
+const zh=document.querySelectorAll('.lang-zh');
+const en=document.querySelectorAll('.lang-en');
+
+zh.forEach(el=>{
+el.style.display=el.style.display==='none'?'block':'none';
+});
+
+en.forEach(el=>{
+el.style.display=el.style.display==='block'?'none':'block';
+});
+}
+</script>
+
+</head>
 <body>
 
 <a href="https://wa.me/85200000000"
@@ -47,11 +54,13 @@ WhatsApp
 
 <header class="fixed top-0 w-full glass border-b border-slate-800 z-50">
 <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
 <div>
 <h1 class="text-2xl font-bold">津拓實業（香港）有限公司</h1>
 <p class="text-slate-400">KingTop Industrial (Hong Kong) Limited</p>
 </div>
 
+<div class="flex items-center gap-8">
 <nav class="hidden md:flex gap-8 text-sm">
 <a href="#about">關於我們</a>
 <a href="#services">加工能力</a>
@@ -59,60 +68,64 @@ WhatsApp
 <a href="#products">產品中心</a>
 <a href="#contact">聯絡我們</a>
 </nav>
+
+<button onclick="toggleLanguage()"
+class="border border-slate-600 px-4 py-2 rounded-xl hover:bg-white hover:text-black transition">
+中文 / EN
+</button>
+</div>
+
 </div>
 </header>
 
 <section class="hero">
 <div class="max-w-7xl mx-auto px-6">
-<h2 class="text-7xl font-black mb-8">
-精密製造<br>
-全球交付
+
+<h2 class="lang-zh text-7xl font-black mb-8">
+精密製造<br>全球交付
 </h2>
 
-<p class="text-xl text-slate-300 max-w-3xl leading-9">
-津拓實業（香港）有限公司專注於 CNC 加工中心、數控機床、鈑金製作及精密金屬零部件製造，服務全球工業客戶。
-</p>
-</div>
-</section>
+<h2 class="lang-en text-7xl font-black mb-8">
+Precision Manufacturing<br>Global Delivery
+</h2>
 
-<section id="about" class="py-28">
-<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-<div>
-<h3 class="text-5xl font-bold mb-8">關於我們</h3>
-<p class="text-slate-300 leading-9 text-lg">
-津拓實業（香港）有限公司是一家位於香港的工貿一體企業，生產基地位於中國蘇州，專注精密金屬加工與全球工業供應鏈服務。
+<p class="lang-zh text-xl text-slate-300 max-w-3xl leading-9">
+津拓實業（香港）有限公司專注於 CNC 加工中心、數控機床、鈑金製作及精密金屬零部件製造。
 </p>
-</div>
 
-<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1400&auto=format&fit=crop"
-class="rounded-3xl shadow-2xl">
+<p class="lang-en text-xl text-slate-300 max-w-3xl leading-9">
+KingTop Industrial (Hong Kong) Limited specializes in CNC machining centers,
+precision machining, sheet metal fabrication and industrial metal component manufacturing.
+</p>
+
 </div>
 </section>
 
 <section id="services" class="py-28 bg-slate-900">
 <div class="max-w-7xl mx-auto px-6">
-<h3 class="text-5xl font-bold text-center mb-16">加工能力</h3>
+
+<h3 class="text-5xl font-bold text-center mb-16">加工能力 / Services</h3>
 
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
 <div class="glass p-8 rounded-3xl card">
 <h4 class="text-2xl font-bold mb-4">CNC 加工中心</h4>
-<p class="text-slate-400">採用津上 TSUGAMI 高精度 CNC 加工中心。</p>
+<p class="text-slate-400">TSUGAMI CNC Machining Center</p>
 </div>
 
 <div class="glass p-8 rounded-3xl card">
 <h4 class="text-2xl font-bold mb-4">精密車削</h4>
-<p class="text-slate-400">高精度軸類與工業零件加工。</p>
+<p class="text-slate-400">Precision Turning</p>
 </div>
 
 <div class="glass p-8 rounded-3xl card">
 <h4 class="text-2xl font-bold mb-4">走心機加工</h4>
-<p class="text-slate-400">微小型高精密零件加工。</p>
+<p class="text-slate-400">Swiss Machining</p>
 </div>
 
 <div class="glass p-8 rounded-3xl card">
 <h4 class="text-2xl font-bold mb-4">鈑金製作</h4>
-<p class="text-slate-400">折彎、切割、焊接及精密鈑金加工。</p>
+<p class="text-slate-400">Sheet Metal Fabrication</p>
 </div>
 
 </div>
@@ -122,7 +135,7 @@ class="rounded-3xl shadow-2xl">
 <section id="equipment" class="py-28">
 <div class="max-w-7xl mx-auto px-6">
 
-<h3 class="text-5xl font-bold text-center mb-16">設備展示</h3>
+<h3 class="text-5xl font-bold text-center mb-16">設備展示 / Equipment</h3>
 
 <div class="grid md:grid-cols-3 gap-8">
 
@@ -141,24 +154,6 @@ class="rounded-3xl h-72 object-cover w-full mb-4">
 <div>
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
 class="rounded-3xl h-72 object-cover w-full mb-4">
-<h4 class="text-xl font-bold">數控磨床</h4>
-</div>
-
-<div>
-<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop"
-class="rounded-3xl h-72 object-cover w-full mb-4">
-<h4 class="text-xl font-bold">鑽床</h4>
-</div>
-
-<div>
-<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop"
-class="rounded-3xl h-72 object-cover w-full mb-4">
-<h4 class="text-xl font-bold">攻牙設備</h4>
-</div>
-
-<div>
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
-class="rounded-3xl h-72 object-cover w-full mb-4">
 <h4 class="text-xl font-bold">TESA 高度儀</h4>
 </div>
 
@@ -168,31 +163,42 @@ class="rounded-3xl h-72 object-cover w-full mb-4">
 
 <section id="contact" class="py-28 bg-slate-900">
 <div class="max-w-5xl mx-auto px-6">
-<h3 class="text-5xl font-bold text-center mb-16">聯絡我們</h3>
+
+<h3 class="text-5xl font-bold text-center mb-16">聯絡我們 / Contact</h3>
 
 <div class="glass p-10 rounded-3xl">
+
+<div class="grid md:grid-cols-2 gap-8 mb-10">
+
+<div>
+<h4 class="text-xl font-bold mb-2">WhatsApp</h4>
+<p class="text-slate-400">+852 0000 0000</p>
+</div>
+
+<div>
+<h4 class="text-xl font-bold mb-2">Email</h4>
+<p class="text-slate-400">info@kingtop-industrial.com</p>
+</div>
+
+</div>
+
 <form class="grid md:grid-cols-2 gap-6">
 
-<input type="text" placeholder="您的姓名"
+<input type="text" placeholder="Name / 您的姓名"
 class="bg-slate-950 p-4 rounded-2xl border border-slate-700">
 
 <input type="email" placeholder="Email"
 class="bg-slate-950 p-4 rounded-2xl border border-slate-700">
 
-<input type="text" placeholder="WhatsApp"
-class="bg-slate-950 p-4 rounded-2xl border border-slate-700">
-
-<input type="text" placeholder="X / Twitter"
-class="bg-slate-950 p-4 rounded-2xl border border-slate-700">
-
-<textarea rows="6" placeholder="請輸入詢盤需求"
+<textarea rows="6" placeholder="Inquiry Details / 詢盤需求"
 class="md:col-span-2 bg-slate-950 p-4 rounded-2xl border border-slate-700"></textarea>
 
 <button class="bg-white text-black font-bold py-4 rounded-2xl md:col-span-2">
-提交詢盤
+Send Inquiry
 </button>
 
 </form>
+
 </div>
 </div>
 </section>
