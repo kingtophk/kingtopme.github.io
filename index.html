@@ -1,373 +1,63 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>KingTop Industrial (Hong Kong) Limited</title>
-
-<meta name="description"
-content="AI-Era Precision Manufacturing Partner | Precision Metal Machining | Industrial Components | Robotics Parts">
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<style>
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:#06142b;
-color:white;
-font-family:Inter,Arial,sans-serif;
-}
-
-.hero{
-background:
-linear-gradient(rgba(2,12,27,.75),rgba(2,12,27,.92)),
-url('https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1800');
-background-size:cover;
-background-position:center;
-}
-
-.card{
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.lang{
-display:none;
-}
-
-.lang.active{
-display:block;
-}
-</style>
+<meta name="description" content="AI-Era Precision Manufacturing Partner">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<!-- NAVIGATION -->
-
-<header class="fixed top-0 w-full z-50 bg-[#04101f]/90 backdrop-blur border-b border-blue-900">
-
-<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-
-<div>
-<h1 class="font-bold text-xl">
-KingTop Industrial
-</h1>
-<p class="text-sm text-blue-300">
-Hong Kong Limited
-</p>
-</div>
-
-<div class="flex gap-6 items-center">
-
-<a href="#about">About</a>
-<a href="#products">Products</a>
-<a href="#equipment">Equipment</a>
-<a href="#contact">Contact</a>
-
-<select
-class="bg-blue-950 border border-blue-700 rounded px-3 py-2"
-onchange="switchLang(this.value)">
-
-<option value="en">EN</option>
-<option value="zh">繁中</option>
-<option value="tr">TR</option>
-
-</select>
-
-</div>
-
-</div>
-
-</header>
-
-<!-- HERO -->
-
-<section class="hero min-h-screen flex items-center">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="lang active" id="en">
-
-<h2 class="text-6xl font-black mb-8">
-Precision Manufacturing<br>
-Global Reach
-</h2>
-
-<p class="text-2xl text-blue-200 max-w-4xl leading-relaxed">
-AI-Era Precision Manufacturing Partner
-specializing in precision metal machining,
-high-end industrial components,
-robotic joint parts and AI product manufacturing.
-</p>
-
-</div>
-
-<div class="lang" id="zh">
-
-<h2 class="text-6xl font-black mb-8">
-精工智造<br>
-通拓全球
-</h2>
-
-<p class="text-2xl text-blue-200 max-w-4xl leading-relaxed">
-AI時代的精密製造夥伴，
-專注精密金屬加工、
-高端工業零件與人工智慧產品配套製造。
-</p>
-
-</div>
-
-<div class="lang" id="tr">
-
-<h2 class="text-6xl font-black mb-8">
-Hassas Üretim<br>
-Küresel Erişim
-</h2>
-
-<p class="text-2xl text-blue-200 max-w-4xl leading-relaxed">
-Yapay zeka çağında hassas üretim ortağınız.
-Metal işleme, robot parçaları ve endüstriyel bileşenlerde uzman.
-</p>
-
-</div>
-
-<a href="#contact"
-class="inline-block mt-10 bg-blue-500 hover:bg-blue-400 px-8 py-4 rounded-xl font-bold">
-
-Get A Quote
-
-</a>
-
-</div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section id="about" class="py-24">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<h3 class="text-4xl font-bold mb-10">
-About KingTop
-</h3>
-
-<div class="grid md:grid-cols-2 gap-12">
-
-<div>
-
-<p class="text-gray-300 leading-8">
-KingTop Industrial (Hong Kong) Limited is based in Hong Kong,
-with its manufacturing base located in Suzhou,
-China’s Yangtze River Delta industrial region.
-</p>
-
-</div>
-
-<div>
-
-<ul class="space-y-4 text-blue-200">
-
-<li>✓ Prototype Sampling</li>
-<li>✓ Stable Quality Control</li>
-<li>✓ On-Time Delivery</li>
-<li>✓ Professional Customs Clearance</li>
-<li>✓ Long-Term Warranty</li>
-<li>✓ International Certifications</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ADVANTAGES -->
-
-<section class="py-24 bg-[#081b35]">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<h3 class="text-4xl font-bold text-center mb-16">
-Why Choose Us
-</h3>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="card bg-blue-950 p-8 rounded-2xl">
-<h4 class="text-xl font-bold mb-3">
-0.002mm Precision
-</h4>
-<p>Ultra precision machining capability.</p>
-</div>
-
-<div class="card bg-blue-950 p-8 rounded-2xl">
-<h4 class="text-xl font-bold mb-3">
-AI Manufacturing
-</h4>
-<p>Supporting next-generation AI hardware production.</p>
-</div>
-
-<div class="card bg-blue-950 p-8 rounded-2xl">
-<h4 class="text-xl font-bold mb-3">
-Global Delivery
-</h4>
-<p>Export-ready supply chain and logistics support.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- PRODUCTS -->
-
-<section id="products" class="py-24">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<h3 class="text-4xl font-bold text-center mb-16">
-Products
-</h3>
-
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-<div class="card bg-blue-950 p-8 rounded-2xl">
-<h4 class="font-bold text-xl mb-3">
-Robot Joint Parts
-</h4>
-<p>Precision up to 0.002mm</p>
-</div>
-
-<div class="card bg-blue-950 p-8 rounded-2xl">
-<h4 class="font-bold text-xl mb-3">
-Machine Tool Parts
-</h4>
-<p>Precision up to 0.002mm</p>
-</div>
-
-<div class="card bg-blue-950 p-8 rounded-2xl">
-<h4 class="font-bold text-xl mb-3">
-JS Machine Tools
-</h4>
-<p>High rigidity CNC solutions.</p>
-</div>
-
-<div class="card bg-blue-950 p-8 rounded-2xl">
-<h4 class="font-bold text-xl mb-3">
-Automatic Tool Presetter
-</h4>
-<p>Automatic tool measurement system.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- EQUIPMENT -->
-
-<section id="equipment" class="py-24 bg-[#081b35]">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<h3 class="text-4xl font-bold text-center mb-16">
-Equipment
-</h3>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="bg-blue-950 p-8 rounded-2xl">CNC Machining Center</div>
-<div class="bg-blue-950 p-8 rounded-2xl">CNC Grinder</div>
-<div class="bg-blue-950 p-8 rounded-2xl">Swiss-Type Lathe</div>
-<div class="bg-blue-950 p-8 rounded-2xl">Drilling Machine</div>
-<div class="bg-blue-950 p-8 rounded-2xl">Tapping Equipment</div>
-<div class="bg-blue-950 p-8 rounded-2xl">TESA Height Gauge</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact" class="py-24">
-
-<div class="max-w-5xl mx-auto px-6">
-
-<h3 class="text-4xl font-bold text-center mb-12">
-Contact Us
-</h3>
-
-<div class="bg-blue-950 rounded-3xl p-10">
-
-<div class="grid md:grid-cols-2 gap-10">
-
-<div>
-<h4 class="font-bold mb-2">WhatsApp</h4>
-<p>+852 XXXXXXXX</p>
-</div>
-
-<div>
-<h4 class="font-bold mb-2">Email</h4>
-<p>sales@kingtop-industrial.com</p>
-</div>
-
-<div>
-<h4 class="font-bold mb-2">Hong Kong Office</h4>
-<p>Your Hong Kong Address</p>
-</div>
-
-<div>
-<h4 class="font-bold mb-2">Manufacturing Base</h4>
-<p>Suzhou, Jiangsu, China</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer class="text-center py-8 border-t border-blue-900">
-
-<p>
-© 2026 KingTop Industrial (Hong Kong) Limited
-</p>
-
-</footer>
-
-<script>
-
-function switchLang(lang){
-
-document.querySelectorAll('.lang')
-.forEach(el=>el.classList.remove('active'));
-
-document.getElementById(lang)
-.classList.add('active');
-
-}
-
-</script>
-
-</body>
-</html>
-```
+<header><div class="container nav"><div class="logo"><h2>KingTop Industrial</h2><span>Hong Kong Limited</span></div>
+<nav>
+<a href="#about" data-key="menu_about"></a>
+<a href="#products" data-key="menu_products"></a>
+<a href="#equipment" data-key="menu_equipment"></a>
+<a href="#contact" data-key="menu_contact"></a>
+</nav>
+<select id="languageSwitcher">
+<option value="en">English</option>
+<option value="zh">繁體中文</option>
+<option value="tr">Türkçe</option>
+</select></div></header>
+
+<section class="hero"><div class="overlay"></div><div class="container hero-content">
+<h1 data-key="hero_title"></h1>
+<p data-key="hero_desc"></p>
+<a href="#contact" class="btn" data-key="hero_button"></a>
+</div></section>
+
+<section id="about"><div class="container">
+<h2 data-key="about_title"></h2>
+<p data-key="about_desc"></p>
+<div class="features">
+<div class="feature" data-key="feature1"></div>
+<div class="feature" data-key="feature2"></div>
+<div class="feature" data-key="feature3"></div>
+<div class="feature" data-key="feature4"></div>
+<div class="feature" data-key="feature5"></div>
+<div class="feature" data-key="feature6"></div>
+</div></div></section>
+
+<section id="products"><div class="container">
+<h2 data-key="products_title"></h2>
+<div class="cards">
+<div class="card"><h3 data-key="product1_title"></h3><p data-key="product1_desc"></p></div>
+<div class="card"><h3 data-key="product2_title"></h3><p data-key="product2_desc"></p></div>
+<div class="card"><h3 data-key="product3_title"></h3><p data-key="product3_desc"></p></div>
+<div class="card"><h3 data-key="product4_title"></h3><p data-key="product4_desc"></p></div>
+</div></div></section>
+
+<section id="equipment"><div class="container">
+<h2 data-key="equipment_title"></h2>
+</div></section>
+
+<section id="contact"><div class="container">
+<h2 data-key="contact_title"></h2>
+<p>WhatsApp: +852 6123 8888</p>
+<p>Email: sales@kingtop-industrial.com</p>
+<button data-key="submit"></button>
+</div></section>
+
+<script src="js/translations.js"></script>
+</body></html>
